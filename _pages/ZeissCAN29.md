@@ -17,7 +17,7 @@ layout: page
 <td markdown="1" valign="top">
 
 Controls Zeiss microscopes that use the *CAN29* protocol
-(AxioObserver/Imager D1 and Z1)
+(AxioObserver/Imager D1, Z1 and 7)
 
 </td>
 </tr>
@@ -99,9 +99,9 @@ This adapter controls Zeiss microscopes that use the CAN29 bus
 interface. The adapter directly communicates to the microscope through
 the serial port (i.e., it does not use the MTB library provided by
 Zeiss) and therefore works on all platforms. No additional software is
-needed. USB and ethernet communication is not (yet) supported.
+needed. USB and ethernet communication is not (yet) supported, however the RS-232 adaptation to USB works fine (you just need to identify the proper com port).
 
-Zeiss microscopes require a female-to-female null-modem cable for RS-232
+Zeiss microscopes requires a RS-232 to RS-232 or USB
 communication.
 
 You will need to define all hardware that is part of your microscope in
